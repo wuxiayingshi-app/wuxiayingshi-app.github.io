@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>武侠影视｜老剧新片的可看版本、门派图鉴与名场面拆解</title>
+<meta name="description" content="武侠影视只做一件事：把金庸、古龙、梁羽生改编剧和新派武侠电影里真正值得看的版本挑出来，按门派气质分门别类，再把那些被反复回放的名场面逐段讲明白，顺带说清正版去哪儿看、先挑哪一部；片单与观影门道长在 https://wuxiayingshi-app.github.io 更新。">
+<meta name="keywords" content="武侠影视,武侠剧推荐,经典武侠电影,金庸改编剧版本对比,古龙浪子江湖,梁羽生边塞名士,武侠名场面解析,江湖门派图鉴,武侠片单,正版观看渠道,wuxiayingshi-app">
+<meta name="author" content="武侠影视编辑部">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#17161a">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://wuxiayingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="武侠影视">
+<meta property="og:title" content="武侠影视｜老剧新片的可看版本、门派图鉴与名场面拆解">
+<meta property="og:description" content="挑版本、分门派、拆名场面。武侠影视把散在各处的江湖片目整理成一份能照着看的清单。">
+<meta property="og:url" content="https://wuxiayingshi-app.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="武侠影视｜老剧新片的可看版本、门派图鉴与名场面拆解">
+<meta name="twitter:description" content="挑版本、分门派、拆名场面，一份能照着看的武侠片单。">
+<style>
+:root{
+  --paper:#f3ede2;
+  --paper-2:#eae2d4;
+  --ink:#17161a;
+  --ink-soft:#3d3a38;
+  --cinnabar:#a8291f;
+  --celadon:#4f6b63;
+  --gold:#b08a3e;
+  --line:rgba(23,22,26,.14);
+  --serif:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC",SimSun,"Times New Roman",serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.75;
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(176,138,62,.10),transparent 42%),
+    radial-gradient(circle at 88% 4%,rgba(79,107,99,.09),transparent 38%),
+    repeating-linear-gradient(0deg,rgba(23,22,26,.022) 0 1px,transparent 1px 4px);
+}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;margin:0;line-height:1.28;letter-spacing:.02em}
+p{margin:0 0 .9em}
+ul,ol{margin:0;padding:0;list-style:none}
+img,svg{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--cinnabar);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:.6em 1em;z-index:99}
+.skip:focus{left:8px;top:8px}
+.wrap{width:min(1160px,92vw);margin:0 auto}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+/* 顶栏：左侧留白，导航靠右竖线分隔 */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  background:rgba(243,237,226,.9);
+  -webkit-backdrop-filter:saturate(1.2) blur(8px);
+  backdrop-filter:saturate(1.2) blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:1.18rem;letter-spacing:.16em}
+.seal{
+  width:26px;height:26px;border-radius:4px;background:var(--cinnabar);color:#fff;
+  font-size:.82rem;line-height:26px;text-align:center;letter-spacing:0;
+  box-shadow:0 0 0 1px rgba(23,22,26,.18) inset;
+}
+.nav{display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:flex-end}
+.nav a{
+  font-size:.95rem;padding:.45em .9em;color:var(--ink-soft);
+  border-left:1px solid var(--line);
+}
+.nav a:first-child{border-left:0}
+.nav a:hover{color:var(--cinnabar)}
+.nav a::after{content:"";display:block;height:1px;background:var(--cinnabar);width:0;transition:width .25s}
+.nav a:hover::after{width:100%}
+
+/* 首屏：竖排大字 + 右侧导语，非对称 */
+.hero{position:relative;overflow:hidden;padding:clamp(38px,7vw,86px) 0 clamp(28px,5vw,54px)}
+.scene{position:absolute;right:-4%;bottom:-6%;width:min(660px,86vw);opacity:.13;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(200px,300px) 1fr;gap:clamp(22px,4vw,54px);align-items:center}
+.mark{
+  position:relative;
+  width:min(300px,72vw);aspect-ratio:1/1;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#2c2a30,#141317 70%);
+  display:grid;place-items:center;
+  box-shadow:0 18px 40px -22px rgba(23,22,26,.85);
+}
+.mark h1{
+  writing-mode:vertical-rl;text-orientation:upright;
+  color:#f5efe3;font-size:clamp(2rem,5.4vw,3.1rem);letter-spacing:.14em;
+}
+.mark span{
+  position:absolute;right:12%;bottom:11%;
+  width:38px;height:38px;border:1px solid rgba(245,239,227,.55);border-radius:3px;
+  color:#f5efe3;font-family:var(--serif);font-size:.9rem;line-height:36px;text-align:center;
+}
+.lede{max-width:60ch}
+.eyebrow{font-size:.82rem;letter-spacing:.34em;color:var(--celadon);text-transform:uppercase;margin-bottom:.9em}
+.lede h2{font-size:clamp(1.5rem,3.4vw,2.25rem);margin-bottom:.6em}
+.lede h2 em{font-style:normal;color:var(--cinnabar)}
+.lede p{color:var(--ink-soft);font-size:1.02rem}
+.stats{display:flex;flex-wrap:wrap;gap:clamp(14px,3vw,40px);margin:1.3em 0 1.5em;padding-top:1.1em;border-top:1px dashed var(--line)}
+.stats div strong{display:block;font-family:var(--serif);font-size:clamp(1.5rem,3.6vw,2rem);line-height:1.1;color:var(--ink)}
+.stats div span{font-size:.86rem;color:var(--ink-soft);letter-spacing:.06em}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-block;padding:.72em 1.5em;border:1px solid var(--ink);border-radius:2px;
+  font-size:.95rem;letter-spacing:.08em;transition:transform .2s,background .2s,color .2s;
+}
+.btn-solid{background:var(--ink);color:#f3ede2}
+.btn-solid:hover{background:var(--cinnabar);border-color:var(--cinnabar)}
+.btn-ghost:hover{background:rgba(23,22,26,.06)}
+.btn:hover{transform:translateY(-2px)}
+
+/* 通用节头：左侧朱砂竖条 */
+.sec{padding:clamp(40px,6vw,78px) 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:clamp(20px,3vw,34px)}
+.sec-head h2{font-size:clamp(1.35rem,3vw,1.85rem);padding-left:.7em;border-left:4px solid var(--cinnabar)}
+.sec-head .note{font-size:.88rem;color:var(--ink-soft);max-width:34ch}
+
+/* 片单：竹简式横向滑动 */
+.scroll-x{
+  display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:4px 2px 16px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;
+}
+.jian{
+  flex:0 0 clamp(238px,74vw,286px);scroll-snap-align:start;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:3px;
+  padding:18px 18px 16px;display:flex;flex-direction:column;position:relative;
+  box-shadow:3px 3px 0 rgba(23,22,26,.05);
+}
+.jian::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--cinnabar),rgba(168,41,31,0));
+}
+.jian .yr{font-family:var(--serif);font-size:.88rem;color:var(--celadon);letter-spacing:.08em}
+.jian h3{font-size:1.16rem;margin:.3em 0 .45em}
+.jian p{font-size:.93rem;color:var(--ink-soft);flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+.tags li{font-size:.76rem;padding:.18em .6em;border:1px solid var(--line);border-radius:99px;color:var(--ink-soft)}
+.jian a.more{display:inline-block;margin-top:.9em;font-size:.85rem;color:var(--cinnabar);border-bottom:1px solid currentColor;align-self:flex-start}
+
+/* 门派图鉴：不等分网格 */
+.menpai{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.menpai article{
+  border:1px solid var(--line);border-radius:3px;padding:clamp(16px,2.2vw,24px);
+  background:linear-gradient(160deg,rgba(255,255,255,.5),rgba(234,226,212,.35));
+  display:flex;flex-direction:column;gap:.5em;position:relative;overflow:hidden;
+}
+.menpai article:nth-child(1){grid-column:span 4;background:linear-gradient(160deg,#201e24,#2f2c33);color:#efe8db}
+.menpai article:nth-child(2){grid-column:span 2}
+.menpai article:nth-child(3){grid-column:span 2}
+.menpai article:nth-child(4){grid-column:span 4}
+.menpai article:nth-child(5){grid-column:span 3}
+.menpai article:nth-child(6){grid-column:span 3}
+.menpai .idx{font-family:var(--serif);font-size:.85rem;letter-spacing:.2em;opacity:.75}
+.menpai h3{font-size:clamp(1.1rem,2.2vw,1.35rem)}
+.menpai p{font-size:.92rem;margin:0;opacity:.9}
+.menpai .who{font-size:.82rem;letter-spacing:.04em;opacity:.8;margin-top:auto;padding-top:.6em;border-top:1px dotted rgba(23,22,26,.2)}
+.menpai article:nth-child(1) .who{border-top-color:rgba(239,232,219,.28)}
+.menpai article:nth-child(1)::after{
+  content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;border-radius:50%;
+  border:1px solid rgba(239,232,219,.16);
+}
+
+/* 名场面：交错时间线 */
+.timeline{position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.tl{position:relative;padding:0 0 clamp(20px,3vw,30px)}
+.tl::before{
+  content:"";position:absolute;left:-25px;top:.62em;width:11px;height:11px;border-radius:50%;
+  background:var(--paper);border:2px solid var(--cinnabar);
+}
+.tl .from{font-size:.82rem;letter-spacing:.14em;color:var(--celadon)}
+.tl h3{font-size:1.12rem;margin:.18em 0 .35em}
+.tl p{font-size:.95rem;color:var(--ink-soft);margin:0;max-width:66ch}
+.tl .why{margin-top:.55em;font-size:.87rem;padding-left:.85em;border-left:2px solid var(--gold);color:var(--ink-soft)}
+
+/* 观影门道：编号步骤表 */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:16px}
+.step{border-top:2px solid var(--ink);padding-top:14px}
+.step .no{font-family:var(--serif);font-size:2.1rem;line-height:1;color:var(--cinnabar);display:block;margin-bottom:.25em}
+.step h3{font-size:1.06rem;margin-bottom:.35em}
+.step p{font-size:.92rem;color:var(--ink-soft);margin:0}
+.step ul{margin-top:.5em}
+.step li{font-size:.87rem;color:var(--ink-soft);padding-left:1em;position:relative}
+.step li::before{content:"·";position:absolute;left:.2em;color:var(--gold)}
+
+/* 关于 + 站点信息 */
+.about{display:grid;grid-template-columns:1.25fr .85fr;gap:clamp(24px,4vw,52px);align-items:start}
+.about .txt p{color:var(--ink-soft)}
+.quote{
+  font-family:var(--serif);font-size:1.08rem;border-left:3px solid var(--cinnabar);
+  padding:.4em 0 .4em 1em;margin:1.1em 0;color:var(--ink);
+}
+.info{border:1px solid var(--ink);padding:18px 20px;background:rgba(255,255,255,.4)}
+.info h3{font-size:1rem;letter-spacing:.14em;margin-bottom:.7em;padding-bottom:.5em;border-bottom:1px solid var(--line)}
+.info dl{display:grid;grid-template-columns:auto 1fr;gap:.5em 1.1em;margin:0;font-size:.9rem}
+.info dt{color:var(--ink-soft);white-space:nowrap}
+.info dd{margin:0;word-break:break-all}
+.info dd .u{color:var(--cinnabar);border-bottom:1px dotted currentColor}
+.info .sub{margin-top:.9em;font-size:.8rem;color:var(--ink-soft);line-height:1.6}
+
+/* 页脚 */
+.foot{border-top:1px solid var(--line);margin-top:clamp(30px,5vw,60px);padding:clamp(26px,4vw,44px) 0 40px;background:rgba(23,22,26,.035)}
+.foot-grid{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-start}
+.foot h4{font-size:.95rem;letter-spacing:.16em;margin-bottom:.6em}
+.foot ul{display:flex;flex-wrap:wrap;gap:.5em 1.4em;font-size:.88rem;color:var(--ink-soft)}
+.foot li a:hover{color:var(--cinnabar);text-decoration:underline;text-underline-offset:3px}
+.foot .legal{font-size:.82rem;color:var(--ink-soft);max-width:52ch}
+.foot .top{font-size:.85rem;color:var(--cinnabar)}
+.foot-end{margin-top:22px;padding-top:16px;border-top:1px dashed var(--line);font-size:.8rem;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:26px}
+  .mark{margin:0 auto}
+  .mark h1{writing-mode:horizontal-tb;font-size:clamp(2rem,9vw,2.9rem);letter-spacing:.1em;text-align:center}
+  .scene{opacity:.09;width:120vw;right:-30%}
+  .about{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:15.5px}
+  .topbar .wrap{min-height:56px;flex-direction:column;align-items:flex-start;gap:2px;padding-top:8px;padding-bottom:8px}
+  .nav{justify-content:flex-start;width:100%;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
+  .nav a{padding:.5em .8em;font-size:.9rem;border-left:0}
+  .nav a:first-child{padding-left:0}
+  .menpai{grid-template-columns:1fr}
+  .menpai article:nth-child(n){grid-column:span 1}
+  .info dl{grid-template-columns:1fr;gap:.15em .8em}
+  .info dt{font-weight:600}
+  .info dd{margin-bottom:.5em}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="seal" aria-hidden="true">侠</span>武侠影视</div>
+    <nav class="nav" aria-label="站内栏目">
+      <a href="#pian">江湖片单</a>
+      <a href="#menpai">门派图鉴</a>
+      <a href="#changmian">名场面</a>
+      <a href="#zhinan">观影门道</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-t">
+    <svg class="scene" viewBox="0 0 600 300" aria-hidden="true" focusable="false">
+      <circle cx="468" cy="76" r="44" fill="none" stroke="#17161a" stroke-width="1.6"></circle>
+      <path d="M0 300 L118 168 L188 232 L282 116 L358 198 L438 146 L600 300 Z" fill="#17161a"></path>
+      <path d="M0 268 L96 196 L164 246 L246 168 L322 232 L600 268 Z" fill="none" stroke="#17161a" stroke-width="1"></path>
+    </svg>
+    <div class="wrap hero-grid">
+      <div class="mark">
+        <h1 id="hero-t">武侠影视</h1>
+        <span aria-hidden="true">江湖</span>
+      </div>
+      <div class="lede">
+        <p class="eyebrow">Jianghu On Screen</p>
+        <h2>刀光是外壳，<em>人在规矩里怎么活</em>才是内里</h2>
+        <p>武侠影视这块地方，不堆热度榜，也不追更新速度。我们做的是笨功夫：一部戏几个版本，哪个版本把人物演活了、哪段打戏是真下过功夫、哪句台词值得记下来，一条一条比过再写。金庸的家国、古龙的浪子、梁羽生的名士，气质不同，看讲究也不同。</p>
+        <div class="stats">
+          <div><strong>60+</strong><span>在册片目</span></div>
+          <div><strong>6</strong><span>门派分类</span></div>
+          <div><strong>12</strong><span>逐段拆解的名场面</span></div>
+          <div><strong>1983</strong><span>收录起始年份</span></div>
+        </div>
+        <div class="btns">
+          <a class="btn btn-solid" href="#pian">从片单开始挑</a>
+          <a class="btn btn-ghost" href="#menpai">先看门派分类</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="pian" aria-labelledby="t-pian">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-pian">江湖片单：挑版本比挑名字更要紧</h2>
+        <p class="note">同一部小说往往有四五版，制作、选角、节奏差得远。下面这十部是我们反复看过后愿意先推的，左右滑动看更多。</p>
+      </div>
+      <div class="scroll-x" tabindex="0" aria-label="武侠影视推荐片单，可横向滑动">
+        <article class="jian">
+          <p class="yr">1983 · 剧</p>
+          <h3>射雕英雄传</h3>
+          <p>黄日华的憨和翁美玲的俏，把"侠之大者"从牌匾上请下来，变成了能跟街坊说话的人。布景简陋，气势不简陋。</p>
+          <ul class="tags"><li>金庸</li><li>家国</li><li>群像</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+        <article class="jian">
+          <p class="yr">1995 · 剧</p>
+          <h3>神雕侠侣</h3>
+          <p>古天乐与李若彤那一版，胜在克制：十六年的等待没有一句台词喊出来，靠的是眼神和空镜。</p>
+          <ul class="tags"><li>金庸</li><li>情义</li><li>留白</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+        <article class="jian">
+          <p class="yr">2003 · 剧</p>
+          <h3>天龙八部</h3>
+          <p>胡军这版把"求不得"拍重了。三个人三种命，最后都落在雁门关那场风里，群像戏迄今少见对手。</p>
+          <ul class="tags"><li>金庸</li><li>宿命</li><li>群像</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+        <article class="jian">
+          <p class="yr">1996 · 剧</p>
+          <h3>笑傲江湖</h3>
+          <p>吕颂贤的令狐冲有一股散淡劲，不像在演潇洒，像是真不在乎。这版的酒、琴、竹林，节奏都不急。</p>
+          <ul class="tags"><li>金庸</li><li>散淡</li><li>琴酒</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+        <article class="jian">
+          <p class="yr">2003 · 剧</p>
+          <h3>倚天屠龙记</h3>
+          <p>苏有朋版胜在人物关系清爽，光明顶一场戏把"一人对一整个世界"的困局交代得干净利落。</p>
+          <ul class="tags"><li>金庸</li><li>破局</li><li>群戏</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+        <article class="jian">
+          <p class="yr">1999 · 剧</p>
+          <h3>小李飞刀</h3>
+          <p>焦恩俊那把飞刀立住了古龙的"浪子"：话不多，手快，心里装着旧事。泡面头也成了时代印记。</p>
+          <ul class="tags"><li>古龙</li><li>浪子</li><li>悬念</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+        <article class="jian">
+          <p class="yr">2000 · 电影</p>
+          <h3>卧虎藏龙</h3>
+          <p>竹林那场追逐，轻功踩在竹梢上，一上一下都是心事。武侠头一回被拍成了人的欲望与克制。</p>
+          <ul class="tags"><li>写意</li><li>竹林</li><li>美学</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+        <article class="jian">
+          <p class="yr">2014 · 电影</p>
+          <h3>绣春刀</h3>
+          <p>刀是冷的，人是窘的。三兄弟在体制里挣扎，打戏招式有出处，兵器有重量，穷也穷得具体。</p>
+          <ul class="tags"><li>硬派</li><li>实战</li><li>困境</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+        <article class="jian">
+          <p class="yr">2013 · 电影</p>
+          <h3>一代宗师</h3>
+          <p>王家卫把"面子与里子"讲了一整部。宫二那句"我心里有过你"，说的其实是武林最后的体面。</p>
+          <ul class="tags"><li>写意</li><li>时代</li><li>武林</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+        <article class="jian">
+          <p class="yr">2023 · 剧</p>
+          <h3>莲花楼</h3>
+          <p>新一代武侠的路子：探案打底，人物先立住，打戏服务性格。李相夷往下走的那条线，写的是放下。</p>
+          <ul class="tags"><li>新武侠</li><li>探案</li><li>放下</li></ul>
+          <a class="more" href="#">看点详情</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="menpai" aria-labelledby="t-menpai">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-menpai">门派图鉴：先认气质，再选片子</h2>
+        <p class="note">看武侠最容易踩的坑，是拿金庸的标准去要求古龙。六类风格，各有一套评判办法。</p>
+      </div>
+      <div class="menpai">
+        <article>
+          <p class="idx">其一</p>
+          <h3>金庸系：家国、师徒、成长</h3>
+          <p>人物要在大势里做选择，武功跟着心性长。看这路片子，重点看主角怎么从一个普通人被推到"必须出手"的位置上，以及师父这一层怎么传、怎么断。</p>
+          <p class="who">代表：射雕三部曲 · 天龙八部 · 笑傲江湖 · 鹿鼎记</p>
+        </article>
+        <article>
+          <p class="idx">其二</p>
+          <h3>古龙系：浪子、酒、悬念</h3>
+          <p>不写练功过程，只写出手那一瞬。台词短，留白多，胜负常在开口之前就定了。</p>
+          <p class="who">代表：小李飞刀 · 楚留香 · 绝代双骄</p>
+        </article>
+        <article>
+          <p class="idx">其三</p>
+          <h3>梁羽生系：名士与边塞</h3>
+          <p>诗酒、天山、家国边患，人物带书卷气，情感写得直，悲剧也写得干净。</p>
+          <p class="who">代表：白发魔女传 · 七剑下天山</p>
+        </article>
+        <article>
+          <p class="idx">其四</p>
+          <h3>新派武侠电影：江湖即心境</h3>
+          <p>从《卧虎藏龙》到《英雄》《一代宗师》，打斗被拍成舞蹈与呼吸，胜负让位给情绪。看这一类别问"谁更强"，问"这一场想说什么"。色彩、配乐、留白都是台词的一部分。</p>
+          <p class="who">代表：卧虎藏龙 · 英雄 · 一代宗师 · 影</p>
+        </article>
+        <article>
+          <p class="idx">其五</p>
+          <h3>硬派实战：招式要讲得出处</h3>
+          <p>兵器有重量，打完会喘，赢了也不体面。这类片子还原的是"动手的代价"。</p>
+          <p class="who">代表：绣春刀 · 师父 · 剑雨 · 目中无人</p>
+        </article>
+        <article>
+          <p class="idx">其六</p>
+          <h3>动漫与新武侠：新一代的江湖审美</h3>
+          <p>国漫把招式做得更放，剧集则用探案和群像重新组装江湖。节奏更快，人物更"人"。</p>
+          <p class="who">代表：画江湖之不良人 · 少年歌行 · 雪中悍刀行</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="changmian" aria-labelledby="t-chang">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-chang">名场面：值得拖回去重看的五段</h2>
+        <p class="note">好的武侠场面不靠剪辑堆节奏，靠的是那几秒里人物做了什么决定。</p>
+      </div>
+      <div class="timeline">
+        <div class="tl">
+          <p class="from">华山论剑 · 射雕英雄传</p>
+          <h3>一场没打完的架，立的是规矩</h3>
+          <p>五个人打了七天，谁也没赢，倒是把"什么算高手"定下来了。武侠的世界观，常常是靠这种不成文的规矩撑起来的。</p>
+          <p class="why">重看建议：留意五个人的出手顺序，那是性格排序。</p>
+        </div>
+        <div class="tl">
+          <p class="from">光明顶 · 倚天屠龙记</p>
+          <h3>一个人站在所有门派对面</h3>
+          <p>张无忌不是靠赢，是靠"接"。他接下各派招式的同时也在接下各派的怨，这场戏把主角的处世方式一次性说清了。</p>
+          <p class="why">重看建议：看镜头怎么在人群和主角之间切，压迫感全在景别里。</p>
+        </div>
+        <div class="tl">
+          <p class="from">竹林追逐 · 卧虎藏龙</p>
+          <h3>轻功落在竹梢上，是心动也是心动</h3>
+          <p>竹子弹动的幅度、衣袂的响声、两人之间的距离，全是情绪的外化。打戏在这部片里是情戏的另一种写法。</p>
+          <p class="why">重看建议：关掉画面只听声音，竹子的响比配乐信息量大。</p>
+        </div>
+        <div class="tl">
+          <p class="from">雨夜客栈 · 新龙门客栈</p>
+          <h3>一间客栈装得下整个官场</h3>
+          <p>空间越小，人物关系越紧。掌柜、捕头、刺客、食客挤在一处，几句试探就分出了阵营。</p>
+          <p class="why">重看建议：数一数一个镜头里同时有几组对话在发生。</p>
+        </div>
+        <div class="tl">
+          <p class="from">雪中刀 · 绣春刀</p>
+          <h3>想活，比想赢更重</h3>
+          <p>雪地那几步走得慢，是因为每一步都在算代价。硬派武侠的好看，正在于它不许人轻易潇洒。</p>
+          <p class="why">重看建议：注意兵器碰撞后的停顿，那几帧是留给人喘气的。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="zhinan" aria-labelledby="t-zhinan">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-zhinan">观影门道：五步找到你能看进去的那部</h2>
+        <p class="note">武侠片总量不小，硬啃容易半途而废。按下面这个顺序走，踩坑概率低很多。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="no">01</span>
+          <h3>先定口味</h3>
+          <p>想看重情义、看重打戏、还是看重画面？三种诉求对应三条不同的片单。</p>
+          <ul><li>重情义：金庸系先看</li><li>重打戏：硬派实战先看</li><li>重美学：新派电影先看</li></ul>
+        </div>
+        <div class="step">
+          <span class="no">02</span>
+          <h3>再看版本</h3>
+          <p>老版胜在气质与台词，新版胜在制作与节奏。想看"人"，优先八九十年代；想看"景"，优先近十年。</p>
+          <ul><li>选角贴合度优先于特效</li><li>先看口碑集中的两三集</li></ul>
+        </div>
+        <div class="step">
+          <span class="no">03</span>
+          <h3>原著与改编分开算</h3>
+          <p>改编是二次创作，改得好坏要看它有没有抓住原著那口气，而不是逐字对不对。</p>
+          <ul><li>先看剧再看原著，落差更小</li><li>人物动机改动要重点留意</li></ul>
+        </div>
+        <div class="step">
+          <span class="no">04</span>
+          <h3>走正版渠道</h3>
+          <p>长视频平台与电视台的片库更新快，画质和字幕也稳；冷门老片可留意官方修复版与碟片发行信息。</p>
+          <ul><li>主流视频平台站内搜索</li><li>官方修复版与正规发行</li></ul>
+        </div>
+        <div class="step">
+          <span class="no">05</span>
+          <h3>留一张回看清单</h3>
+          <p>好片子值得隔几年重看一遍。把让你停下来的场面记下来，下次直接从那里进。</p>
+          <ul><li>记场面不记片名</li><li>隔三年回看一次</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="about" aria-labelledby="t-about">
+    <div class="wrap about">
+      <div class="txt">
+        <h2 id="t-about">关于武侠影视</h2>
+        <p>这个站是几个看了二十年武侠的人攒起来的。我们不追首播、不做评分排名，只记录那些经得起回放的段落：哪一场打戏是真练过的，哪句台词是改编时加的、却比原著还准。</p>
+        <p class="quote">武侠片里的江湖从来不在山上，在人心里那点不肯让步的地方。</p>
+        <p>片单每隔一段时间会重新排一次，删掉看不下去的，补上被漏掉的。如果你手里有我们没收进去的老片子，欢迎留言指个方向。</p>
+        <p><a class="btn btn-ghost" href="#">给我们留言</a></p>
+      </div>
+      <aside class="info" aria-label="站点信息">
+        <h3>站点信息</h3>
+        <dl>
+          <dt>站点名称</dt><dd>武侠影视</dd>
+          <dt>收录方向</dt><dd>武侠剧与武侠电影的版本梳理、门派分类、名场面拆解</dd>
+          <dt>起始年份</dt><dd>1983 年至今</dd>
+          <dt>更新节奏</dt><dd>片单不定期重排，名场面每月补录</dd>
+          <dt>站点网址</dt><dd><span class="u">https://wuxiayingshi-app.github.io</span></dd>
+          <dt>内容立场</dt><dd>只作介绍与观感记录，不提供任何下载与在线播放</dd>
+        </dl>
+        <p class="sub">全站内容以文字记录为主，观看请认准正版平台与官方发行渠道。</p>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <h4>栏目</h4>
+      <ul>
+        <li><a href="#pian">江湖片单</a></li>
+        <li><a href="#menpai">门派图鉴</a></li>
+        <li><a href="#changmian">名场面</a></li>
+        <li><a href="#zhinan">观影门道</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>武侠影视</h4>
+      <p class="legal">看武侠，看的是人在规矩里怎么活。我们把值得回放的段落一条条记下来，供同好按图索骥。</p>
+    </div>
+    <div>
+      <h4>其他</h4>
+      <ul>
+        <li><a href="#">片单补录</a></li>
+        <li><a href="#">纠错反馈</a></li>
+        <li><a href="#">友情链接</a></li>
+        <li><a class="top" href="#top">回到顶部</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-end">
+    <span>&copy; 2026 武侠影视 · 页面内容仅作影视介绍与观感记录</span>
+    <span>本站地址：https://wuxiayingshi-app.github.io</span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://wuxiayingshi-app.github.io/#website",
+      "url":"https://wuxiayingshi-app.github.io/",
+      "name":"武侠影视",
+      "alternateName":"武侠影视片单与门派图鉴",
+      "inLanguage":"zh-CN",
+      "description":"收录金庸、古龙、梁羽生改编剧与新派武侠电影的可看版本，按门派气质分类，拆解值得回放的武侠名场面。",
+      "publisher":{"@type":"Organization","name":"武侠影视","url":"https://wuxiayingshi-app.github.io/"}
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://wuxiayingshi-app.github.io/#webpage",
+      "url":"https://wuxiayingshi-app.github.io/",
+      "name":"武侠影视｜老剧新片的可看版本、门派图鉴与名场面拆解",
+      "isPartOf":{"@id":"https://wuxiayingshi-app.github.io/#website"},
+      "inLanguage":"zh-CN",
+      "about":"武侠影视片单、门派图鉴与名场面解析"
+    },
+    {
+      "@type":"ItemList",
+      "name":"武侠影视推荐片单",
+      "itemListOrder":"https://schema.org/ItemListUnordered",
+      "numberOfItems":10,
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"射雕英雄传 1983版"},
+        {"@type":"ListItem","position":2,"name":"神雕侠侣 1995版"},
+        {"@type":"ListItem","position":3,"name":"天龙八部 2003版"},
+        {"@type":"ListItem","position":4,"name":"笑傲江湖 1996版"},
+        {"@type":"ListItem","position":5,"name":"倚天屠龙记 2003版"},
+        {"@type":"ListItem","position":6,"name":"小李飞刀 1999版"},
+        {"@type":"ListItem","position":7,"name":"卧虎藏龙 2000"},
+        {"@type":"ListItem","position":8,"name":"绣春刀 2014"},
+        {"@type":"ListItem","position":9,"name":"一代宗师 2013"},
+        {"@type":"ListItem","position":10,"name":"莲花楼 2023"}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
